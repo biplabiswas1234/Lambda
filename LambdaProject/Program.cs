@@ -40,6 +40,25 @@ namespace LambdaProject
             Console.WriteLine("\nAverage age");
             double Avg = listPerson.Average(e => (e.Age));
             Console.WriteLine("Average of all persons: " + Avg);
+            //uc 5
+            Console.WriteLine("\nSearching a person Bikash");
+            if (listPerson.Exists(e => e.Name == "Bikash"))
+            {
+                Console.WriteLine("Name is available");
+            }
+            else
+            {
+                Console.WriteLine("Name is not available");
+            }
+            Console.WriteLine("\nSearching a person Billu");
+            if (listPerson.Exists(e => e.Name == "Billu"))
+            {
+                Console.WriteLine("Name is available");
+            }
+            else
+            {
+                Console.WriteLine("Name is not available");
+            }
         }
     }
 }
