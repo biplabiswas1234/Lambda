@@ -28,6 +28,14 @@ namespace LambdaProject
             {
                 Console.WriteLine("Name:   " +person.Name + "      Age:    "+person.Age);
             }
+            //uc3
+            Console.WriteLine("\nRetreiving teenager");
+
+            foreach (Person person in listPerson.FindAll(e => (e.Age >= 13 && e.Age <= 18)))
+            {
+                Console.WriteLine("Name:   " + person.Name + "      Age:    " + person.Age);
+
+            }
         }
     }
 }
