@@ -59,6 +59,12 @@ namespace LambdaProject
             {
                 Console.WriteLine("Name is not available");
             }
+            //uc 6
+            Console.WriteLine("\nPerson whose age are not less than 60");
+            foreach (Person person in listPerson.FindAll(e => (e.Age >= 60)).ToList())
+            {
+                Console.WriteLine(person.Name);
+            }
         }
     }
 }
