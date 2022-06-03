@@ -23,6 +23,11 @@ namespace LambdaProject
             {
                 Console.WriteLine(person.Name);
             }
+            //uc2
+            foreach (Person person in listPerson.FindAll(e => (e.Age >= 60)).Take(2).ToList())
+            {
+                Console.WriteLine("Name:   " +person.Name + "      Age:    "+person.Age);
+            }
         }
     }
 }
