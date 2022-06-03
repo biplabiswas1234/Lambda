@@ -36,6 +36,10 @@ namespace LambdaProject
                 Console.WriteLine("Name:   " + person.Name + "      Age:    " + person.Age);
 
             }
+            //uc 4
+            Console.WriteLine("\nAverage age");
+            double Avg = listPerson.Average(e => (e.Age));
+            Console.WriteLine("Average of all persons: " + Avg);
         }
     }
 }
