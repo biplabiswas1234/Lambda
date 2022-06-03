@@ -65,6 +65,22 @@ namespace LambdaProject
             {
                 Console.WriteLine(person.Name);
             }
+            //uc 7
+            Console.WriteLine("\nRemove a name 'Jodu'");
+
+            if (listPerson.TrueForAll(e => e.Name != "Jodu"))
+            {
+                Console.WriteLine("No person in the list");
+            }
+            else
+            {
+                listPerson.RemoveAll(e => e.Name == "Jodu");
+                Console.WriteLine("After removing name");
+                foreach (Person person in listPerson)
+                {
+                    Console.WriteLine(person.Name);
+                }
+            }
         }
     }
 }
